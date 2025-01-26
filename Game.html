@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>ButtonGame</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff; /* Default background color */
+            font-family: Arial, sans-serif;
+        }
+
+        .circle-button {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+
+
+    </style>
 </head>
 <body>
-<!--  -->
+<button class="circle-button" onclick="changeColor()">Click Me</button>
+<!-- Div stuck to the bottom of the page that centers a button to return to SimpleWebsite.html-->
+<div class="home-button" style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);">
+    <button onclick="location.href='SimpleWebsite.html'">Back Home</button>
+<script>0
+    function changeColor() {
+        const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+        document.body.style.backgroundColor = randomColor;
+    }
+</script>
 </body>
 </html>
