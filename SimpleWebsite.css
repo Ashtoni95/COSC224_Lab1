@@ -78,3 +78,31 @@ body {
     background-color: black;
     padding-top: 450px;
 }
+/* Footer Styles */
+footer {
+    background-color: #ACADA8;
+    color: #333;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.socials ul{
+    list-style: none;
+    display: flex;
+}
